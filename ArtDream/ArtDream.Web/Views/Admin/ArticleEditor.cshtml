@@ -1,0 +1,58 @@
+﻿@using Telerik.Web.Mvc.UI
+@model ArtDream.Web.Models.ArticleViewModel
+@using (Html.BeginForm("SaveArticle", "Admin", null, FormMethod.Post, new { @class = "form-horizontal" }))
+{
+    <div class="modal-header">
+        <a class="close" data-dismiss="modal">×</a>
+        <h3>
+            编辑文章</h3>
+    </div>
+    <div class="modal-body">
+        <div id="SaveStateInfo">
+        </div>
+        @Html.HiddenFor(d => d.Id)
+
+       <div class="control-group">
+            <label class="control-label">
+                类型</label>
+            <div class="controls">
+                @Html.DropDownList("Type",ArtDream.Web.Helpers.ArticleHelper.GenerateArticleTypes(Model.Type))
+            </div>
+        </div>
+
+        <div class="control-group">
+            <label class="control-label">
+                标题</label>
+            <div class="controls">
+                @Html.TextBoxFor(d => d.Title, new { @class = "span3", rows=4 })
+                @Html.ValidationMessageFor(d => d.Title, "", new { @class = "help-inline valid_error" })
+            </div>
+        </div>
+        <div class="control-group">
+            <label class="control-label">内容</label>
+            <div class="controls">
+                @{ Html.Telerik().Editor()
+               .Name("Content")
+               .HtmlAttributes(new { style = "height:200px" })
+               .Encode(false)
+               .Value(System.Web.HttpUtility.HtmlDecode(Model.Content))
+               .Render();
+        }
+            </div>
+        </div>
+       <div class="control-group">
+            <label class="control-label">
+                发布</label>
+            <div class="controls">
+                @Html.CheckBoxFor(d => d.Published)
+            </div>
+        </div>
+    </div>
+
+        
+    <div class="modal-footer">
+        <a href="#" data-dismiss="modal" class="btn">关闭</a> <a href="javascript:_questionManager.SaveQuestion()"
+            class="btn btn-primary">保存</a>
+    </div>
+}
+

@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtDream.Web", "ArtDream.Web\ArtDream.Web.csproj", "{A23111E7-8CB9-46B9-8035-B65C75BC1C43}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtDream.Model", "ArtDream.Model\ArtDream.Model.csproj", "{58EBEAFF-68A4-4D4F-97C9-EF22A3A3BAC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArtDream.Domain", "ArtDream.Domain\ArtDream.Domain.csproj", "{38A002E1-1B86-4E28-A32C-A5736113022F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A23111E7-8CB9-46B9-8035-B65C75BC1C43}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A23111E7-8CB9-46B9-8035-B65C75BC1C43}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A23111E7-8CB9-46B9-8035-B65C75BC1C43}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A23111E7-8CB9-46B9-8035-B65C75BC1C43}.Release|Any CPU.Build.0 = Release|Any CPU
+		{58EBEAFF-68A4-4D4F-97C9-EF22A3A3BAC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{58EBEAFF-68A4-4D4F-97C9-EF22A3A3BAC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{58EBEAFF-68A4-4D4F-97C9-EF22A3A3BAC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{58EBEAFF-68A4-4D4F-97C9-EF22A3A3BAC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38A002E1-1B86-4E28-A32C-A5736113022F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38A002E1-1B86-4E28-A32C-A5736113022F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38A002E1-1B86-4E28-A32C-A5736113022F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38A002E1-1B86-4E28-A32C-A5736113022F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
